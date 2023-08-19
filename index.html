@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotto layout</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img src="./icons/banner.svg" />
+    </div>
+    <div class="layout" id="layout">
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+        euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
+        Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
+        Nullam et congue quam. Quisque luctus egestas gravida. Quisque maximus,
+        diam non vehicula imperdiet, nunc purus dapibus est, eu efficitur orci
+        dolor eu turpis.
+      </div>
+      <div class="heading">
+        <img src="./icons/questionmark.svg" alt="questionmark" />
+        <p class="hr-line">
+          NAME ONE LOTTERY GAME THAT YOU CAN BET ON AT
+          <span class="company__name">LOTTOSTAR.CO.ZA</span>
+        </p>
+        <div></div>
+      </div>
+
+      <div class="row">
+        <div class="lottery_input">
+          <input
+            placeholder="EX: LOTTERY"
+            class="input"
+            type="text"
+            required
+            id="lottery_name"
+          />
+          <small id="lottery_name_error" class="error"></small>
+        </div>
+      </div>
+
+      <div class="heading">
+        <img src="./icons/edit.svg" alt="edit" />
+
+        <p class="hr-lines">tell us who you are</p>
+      </div>
+
+      <div class="input__container">
+        <div class="row">
+          <div class="inputs">
+            <input
+              placeholder="ID NUMBER"
+              class="input"
+              type="text"
+              required
+              id="id_number"
+              maxlength="10"
+              aria-valuemax="10"
+            />
+            <small id="id_number_error" class="error"></small>
+          </div>
+          <div class="inputs">
+            <input
+              placeholder="NAME"
+              class="input"
+              type="text"
+              required
+              id="name"
+            />
+            <small id="name_error" class="error"></small>
+          </div>
+          <div class="inputs">
+            <input
+              placeholder="SURNAME"
+              class="input"
+              type="text"
+              required
+              id="surname"
+            />
+            <small id="surname_error" class="error"></small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="inputs">
+            <input
+              placeholder="EMAIL"
+              class="input"
+              type="email"
+              required
+              id="email"
+            />
+            <small id="email_error" class="error"></small>
+          </div>
+          <div class="inputs">
+            <input
+              placeholder="MOBILE NUMBER"
+              class="input"
+              type="tel"
+              required
+              id="mobile"
+            />
+            <small id="mobile_error" class="error"></small>
+          </div>
+          <div class="inputs">
+            <p>
+              <input
+                type="radio"
+                id="ACCEPT T'S & C'S"
+                name="ACCEPT T'S & C'S"
+                value="ACCEPT T'S & C'S"
+                required
+              />
+              <label for="ACCEPT" class="accept">ACCEPT </label
+              ><label class="radio_label" for="T'S & C'S">T'S & C'S</label>
+            </p>
+            <small id="terms_error" class="error"></small>
+          </div>
+        </div>
+        <audio id="submissionMusic" src="./sound/success-1-6297.mp3"></audio>
+        <div class="submit__button">
+          <button id="submit">SUBMIT NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="answer__layout" id="answer">
+      <h6 class="answer_card_heading">Your answer has been submitted</h6>
+      <p class="answer_card_content">
+        your answer has been submitted Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Etiam in euismod arcu. Vivamus sit amet lacinia purus.
+        Nulla a turpis ipsum.
+      </p>
+
+      <div class="buttons__group">
+        <button class="register">REGISTER & BET NOW</button>
+        <button class="login">LOGIN & BET NOW</button>
+      </div>
+    </div>
+    <div class="bottom__container">
+      <div class="photo"></div>
+      <p class="photo__label">CHARITY NAME</p>
+      <div class="left__container">
+        <h2 class="underline">RAISED FOR CHARITY</h2>
+        <div class="bottom__container__footer">
+          <div class="amount">
+            <div>R</div>
+            <div></div>
+            <div id="num1">0</div>
+            <div id="num2">1</div>
+            <div id="num3">2</div>
+            <div id="num4">3</div>
+            <div id="num5">4</div>
+            <div id="num6">5</div>
+          </div>
+          <button class="learn__more__button">LEARN MORE</button>
+          <p style="color: white">
+            CORPORATE SOCIAL RESPONSIBILITY TOTAL CONTRIBUTIONS
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        LottoStar is licensed by the Mpumalanga Economic Regulator. No
+        under18’s. National Responsible Gambling Programme 0800 006 008. You are
+        not playing directly in these lotteries but rather betting on the
+        outcome or result of such lotteries.
+      </p>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
