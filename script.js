@@ -1,7 +1,6 @@
 let error = false;
 const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let emailRegex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
-let internationalPhoneRegex = /^\+[1-9]{1}[0-9]{3,14}$/;
 
 document.addEventListener("DOMContentLoaded", function () {
   const musicPlayer = document.getElementById("submissionMusic");
@@ -33,8 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobile = document.getElementById("mobile").value;
 
     let isEmailValid = emailRegex.test(email);
-    let isPhoneNumberValid = internationalPhoneRegex.test(mobile);
-
+   
     if(!terms){
       error = true;
       document.getElementById("terms_error").innerHTML =
@@ -64,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("email_error").innerHTML =
         "Please enter valid email address";
     }
-    if (!isPhoneNumberValid) {
+    if (mobile.length !== 10) {
       error = true;
       document.getElementById("mobile_error").innerHTML =
         "Please enter valid mobile number";
