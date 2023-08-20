@@ -616,30 +616,10 @@ footer p {
     cursor: pointer;
   }
   .hr-lines:after {
-    content: " ";
-    height: 2px;
-    width: 75%;
-    display: block;
-    position: absolute;
-    top: 43%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+    display: none;
   }
   .hr-line:after {
-    content: " ";
-    height: 2px;
-    width: 80%;
-    display: block;
-    position: absolute;
-    top: 29%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+    display: none;
   }
 
   .underline {
@@ -898,30 +878,11 @@ footer p {
     cursor: pointer;
   }
   .hr-lines:after {
-    content: " ";
-    height: 2px;
-    width: 75%;
-    display: block;
-    position: absolute;
-    top: 48%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+   display: none;
   }
+  
   .hr-line:after {
-    content: " ";
-    height: 2px;
-    width: 80%;
-    display: block;
-    position: absolute;
-    top: 34%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+    display: none;
   }
 
   .left__container {
@@ -1164,31 +1125,12 @@ footer p {
     font-weight: bold;
     cursor: pointer;
   }
+  
   .hr-lines:after {
-    content: " ";
-    height: 2px;
-    width: 75%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+    display: none;
   }
   .hr-line:after {
-    content: " ";
-    height: 2px;
-    width: 80%;
-    display: block;
-    position: absolute;
-    top: 37%;
-    margin: 2px;
-    right: 5px;
-    border-radius: 4px;
-    opacity: 0.7;
-    background: var(--form, rgba(255, 255, 255, 0.75));
+    display: none;
   }
 
   .underline {
@@ -1436,7 +1378,6 @@ footer p {
     height: 107%;
     flex-shrink: 0;
     border-radius: 20px;
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1530,7 +1471,6 @@ footer p {
     height: 90%;
     flex-shrink: 0;
     border-radius: 20px;
-
     display: flex;
     align-items: center;
     flex-direction: column;
