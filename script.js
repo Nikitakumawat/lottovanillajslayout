@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   submit.addEventListener("click", function () {
     const terms = document.getElementById("ACCEPT T'S & C'S").checked
-      ? document.getElementById("ACCEPT T'S & C'S").value
+      ? true
       : false;
     const lotteryName = document.getElementById("lottery_name").value;
     const name = document.getElementById("name").value;
@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let isEmailValid = emailRegex.test(email);
     let isPhoneNumberValid = internationalPhoneRegex.test(mobile);
 
+    if(!terms){
+      error = true;
+      document.getElementById("terms_error").innerHTML =
+        "Please select terms&conditions";
+    }
     if (!lotteryName.length) {
       error = true;
       document.getElementById("lottery_name_error").innerHTML =
@@ -59,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("email_error").innerHTML =
         "Please enter valid email address";
     }
-    if (isPhoneNumberValid) {
+    if (!isPhoneNumberValid) {
       error = true;
       document.getElementById("mobile_error").innerHTML =
-        "Please enter valid 10 digit mobile number";
+        "Please enter valid mobile number";
     }
 
     let userData = {
